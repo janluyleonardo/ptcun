@@ -1,0 +1,46 @@
+body {
+    /* background-image: url('../IMG/dark-grey-terrazzo.png'); */
+    /* background-color: black; */
+    background-image: linear-gradient(#fff, whitesmoke, #06743B);
+    background-attachment: fixed;
+    /* background-size: 100% 100%;  Este se utiliza si es una imagen o foto para que quede en el fondo completo*/
+}
+
+.jumbotron {
+    background-color: #06743B;
+    color: whitesmoke;
+}
+
+.panel-heading {
+    background-color: #06743B !important;
+    color: whitesmoke !important;
+}
+
+.panel.body {
+    color: yellowgreen !important;
+    /*#2b2b2b*/
+}
+
+.nabvar {
+    background-color: #06743B !important;
+}
+
+#navbar li a:link,
+#navbar li a:visited {
+    color: whitesmoke !important;
+}
+
+#navbar li a:hover,
+#navbar li a:active {
+    color: #78B100 !important;
+}
+
+.navbar-brand:link,
+.navbar-brand:visited {
+    color: #78B100 !important;
+}
+
+.navbar-brand:hover,
+.navbar-brand:active {
+    color: #fff !important;
+}
