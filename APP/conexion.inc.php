@@ -7,7 +7,7 @@
 // DB CREDENCIALES DE USUARIO.
 define('DB_HOST', 'localhost');
 define('DB_USER', 'root');
-define('DB_PASS', '');
+define('DB_PASS', 'Moreno880501');
 define('DB_NAME', 'mdsr');
 
 // Ahora, establecemos la conexión.

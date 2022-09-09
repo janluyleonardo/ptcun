@@ -16,7 +16,7 @@ if (isset($_GET['name'])) {
 
   <link rel="shortcut icon" href="IMG/d.png">
   <link href="../CSS/bootstrap.min.css" rel="stylesheet">
-  <link href="../CSS/estilos_propios.css?v=1" rel="stylesheet">
+  <link href="../CSS/estilos_propios.css?v=1.1" rel="stylesheet">
 </head>
 
 <body>
@@ -71,14 +71,14 @@ if (isset($_GET['name'])) {
                   <label for="Materia">Estudiante:</label>
                   <br>
                   <select id="Estudiante" name="Estudiante">
-                    <option class="form-control" value="0">Seleccione:</option>
+                    <option value="0">Seleccione:</option>
                     <?php
                     $query = $connect->prepare("SELECT * FROM estudiantes");
                     $query->execute();
                     $data = $query->fetchAll();
 
                     foreach ($data as $valores) :
-                      echo '<option class="form-control" value="' . $valores["Documento"] . '">' . $valores["Nom_Estudiante"] . " " . $valores["Ape_estudiante"] . '</option>';
+                      echo '<option  value="' . $valores["Documento"] . '">' . $valores["Nom_Estudiante"] . " " . $valores["Ape_estudiante"] . '</option>';
                     endforeach;
                     ?>
                   </select>
@@ -86,14 +86,14 @@ if (isset($_GET['name'])) {
                   <label for="Carrera">Carrera:</label>
                   <br>
                   <select id="Carrera" name="Carrera">
-                    <option class="form-control" value="0">Seleccione:</option>
+                    <option  value="0">Seleccione:</option>
                     <?php
                     $query = $connect->prepare("SELECT * FROM carrera");
                     $query->execute();
                     $data = $query->fetchAll();
 
                     foreach ($data as $valores) :
-                      echo '<option class="form-control" value="' . $valores["id"] . '">' . $valores["id"] . " - " . $valores["nombre"] . '</option>';
+                      echo '<option value="' . $valores["id"] . '">' . $valores["id"] . " - " . $valores["nombre"] . '</option>';
                     endforeach;
                     ?>
                   </select>
@@ -143,6 +143,26 @@ if (isset($_GET['name'])) {
             </form>
           </div>
         </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <td>Alumno</td>
+              <td>Carrera</td>
+              <td>Materia</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>2</td>
+              <td>3</td>
+            </tr>
+          </tbody>
+        </table>
       </div>
     </div>
   </div>
